@@ -5,3 +5,5 @@ license 'gplv3'
 description 'Installs/Configures hfsplus'
 long_description 'Installs/Configures hfsplus'
 version '0.1.0'
+
+supports 'debian'
