@@ -4,7 +4,7 @@ maintainer_email 'james.cuzella@lyraphase.com'
 license 'gplv3'
 description 'Installs/Configures hfsplus'
 long_description 'Installs/Configures hfsplus'
-version '0.1.0'
+version '0.2.0'
 
 supports 'debian'
 supports 'rhel'
