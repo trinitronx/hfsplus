@@ -22,6 +22,8 @@ require 'spec_helper'
 
 describe 'hfsplus::default' do
   context 'When all attributes are default, on an unspecified platform' do
+    let(:packages) { ['hfsplus', 'hfsutils', 'hfsprogs', 'gdisk'] }
+
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new
       runner.converge(described_recipe)
@@ -29,6 +31,12 @@ describe 'hfsplus::default' do
 
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
+    end
+
+    it 'installs hfsplus packages' do
+      packages.each do |pkg|
+        expect(chef_run).to install_package(pkg)
+      end
     end
   end
 end
