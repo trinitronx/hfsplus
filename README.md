@@ -1,4 +1,4 @@
 # hfsplus
 
-TODO: Enter the cookbook description here.
+Installs packages for mounting HFS+ formatted disks.
 
