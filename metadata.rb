@@ -7,3 +7,8 @@ long_description 'Installs/Configures hfsplus'
 version '0.1.0'
 
 supports 'debian'
+supports 'rhel'
+supports 'fedora'
+supports 'amazon'
+
+depends 'yum-elrepo', '~> 0.2'
